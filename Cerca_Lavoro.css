@@ -1,0 +1,179 @@
+header {
+    background-image: url("https://www.wolterskluwer.com/-/media/project/wolterskluwer/oneweb/www/lr/it/offerta-fisco-lavoro-contabilita/it-offerta-fisco-lavoro-e-contabilita-main-page.jpg?rev=a76dc41a33d94b22ad38cba1ac131d18");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#Nome_sito, nav{
+    z-index: 1;
+}
+
+#Nome_sito{
+    color: blue;
+    font-size: 60px;
+}
+
+body {
+    margin: 0;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+#main a{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30%;
+    width: 100px;
+}
+
+#links a{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
+    color: #ff0000;
+    padding: 5px 15px;
+    border-radius:50px;
+    z-index: 0;
+}
+
+#Nome_sito h3{
+    font-style: italic;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8%;
+    width: 100%;
+    color: white;
+
+    position: page;
+}
+
+#element1{
+    margin-left: 25px;
+}
+#element2{
+    margin-right: 25px;
+}
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: mintcream;
+
+    align-items: center;
+}
+
+.offerta {
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding:30px;
+    margin:20px;
+    height: 20%;
+    width: 40%;
+
+    border: 5px groove lightsalmon;
+}
+
+.testo{
+    display: flex;
+    flex-direction: column;
+}
+
+.offerta img {
+    height: auto;
+    width: 33%;
+    margin-right: 20px;
+}
+
+.corpo{
+    font-family: 'Roboto', sans-serif;
+}
+
+.titolo{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 20px;
+}
+
+@media (max-width: 740px){
+    body{
+        font-size: 6px;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 770px) {
+    #links{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+    }
+    #Nome_sito{
+        display: flex;
+        justify-content: center;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 539px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+        margin-left: 6%;
+    }
+}
+
+@media (max-width: 440px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+        margin-left: calc(90px - 2%);
+    }
+}
+
